@@ -57,7 +57,7 @@ In mid 2018, Vue became the most starred javascript framework on GitHub. Earlier
 Note: Let's see some of the adoption numbers. Vue has over a million weekly downloads on NPM.
 Not only that, it has more than 900,000 weekly active devtools users. Devtools is a browser extension to help in debugging, so this number represents the large group of people who are part of the Vue developer community. From my point of view, this metric is more important than the first one. The NPM downloads include a variety of use-cases like that of automated CI builds, downloads for mirroring purposes, and robots that download every package for analysis. However, devtools provides a leading indicator of what's going to come. These 900,000 users are using Vue in their day-to-day work and a significant number of them are going to write more of their future applications in Vue.
 
----?image=jsDelivr.png&size=auto 80%
+---?image=jsdelivr.png&size=auto 80%
 
 @snap[north]
 jsDelivr CDN
