@@ -14,7 +14,11 @@
 @snapend
 
 Note:
-Hello everyone! I'm super excited to be here, as we've got a houseful of Vue lovers here today from different parts of the country. If someone had told me that we'll be having a Vue conference a year back, I'd not have believed it. Yet, here we are! Let's take a look at the current state of the Vue ecosystem and some of its recent developments, in the community as well as technical aspects. Sit back, relax, and enjoy the View!
+Hello everyone! Woah, that's a lot of people.
+
+---?image=excited.jpg&size=auto 80%
+
+Note: I'm super excited to be here, as we've got a houseful of Vue lovers here today from different parts of the country. If someone had told me that we'll be having a Vue conference a year back, I'd not have believed it. Yet, here we are! Let's take a look at the current state of the Vue ecosystem and some of its recent developments, in the community as well as technical aspects. Sit back, relax, and enjoy the View!
 
 ---
 
@@ -29,7 +33,11 @@ Note: Vue was created by Evan You after working for Google using AngularJS in a 
 
 "I figured, what if I could just extract the part that I really liked about Angular and build something really lightweight." - Evan You
 
-Note: In his own words, <q>I figured, what if I could just extract the part that I really liked about Angular and build something really lightweight.</q> And voila, Vue was born.
+Note: In his own words, <q>I figured, what if I could just extract the part that I really liked about Angular and build something really lightweight.</q>
+
+---?image=born.jpg&size=auto 80%
+
+Note: And voila, Vue was born.
 So Vue is a javascript framework, yes! It's also progressive in nature.
 If you're building user interfaces, Vue is a great choice. But don't take our word for it, just go ahead and give it a try. By design, it's easy to pick up and integrate in your existing project. This is in contrast to other monolithic frameworks where you'd typically have to do a full migration. As we'll see in the upcoming talks today, Vue is not just suited for quick-prototyping; it's also perfectly capable of powering large-scale applications as well.
 
@@ -43,7 +51,12 @@ If you're building user interfaces, Vue is a great choice. But don't take our wo
 @ulend
 
 Note: So, what's the buzz around Vue.js, anyway?
-In mid 2018, Vue became the most starred javascript framework on GitHub. Earlier this year, Vue became the second most starred project on GitHub (only behind freeCodeCamp)! Now I'm not saying that more GitHub stars equals more usage; just that Vue is no longer a new kid on the block and is definitely worth checking out!
+In mid 2018, Vue became the most starred javascript framework on GitHub. Earlier this year, Vue became the second most starred project on GitHub (only behind freeCodeCamp)!
+
+---?image=github.png&size=auto 80%
+
+Note: Booyah!
+Now I'm not saying that more GitHub stars equals more usage; just that Vue is no longer a new kid on the block and is definitely worth checking out!
 
 ---
 
@@ -66,9 +79,32 @@ jsDelivr CDN
 Note: These are the number of hits on the jsDelivr CDN. Vue got over 900 million hits in the last month. That's more than 30 million hits a day. And that's pretty huge! This number is quite high as compared to NPM downloads because Vue provides a drop-in solution. You could just add the CDN file in a script tag and you're ready to use the power of Vue!
 Also, note the jQuery and Bootstrap numbers here. That's quite close, don't you think?
 
+---?image=numbers.jpg&size=auto 80%
+
+Note: I think we have had enough of numbers!
+Let's move onto something real.
+
 ---
 
-### Companies using Vue.js in India
+### Who uses Vue?
+
+@ul
+- Laravel
+- GitLab
+- Behance
+- Apple
+- Todoist
+- Grammarly
+- Alibaba
+- Netflix
+- ... and many more!
+@ulend
+
+Note: Who uses Vue? For starters, Laravel! It's the one who kickstarted Vue's adoption. Then we have GitLab, who was again one of the early adopters of Vue. Behance uses Vue. Apple is using Vue. And the list goes on and on!
+
+---
+
+### Who's using Vue.js in India?
 
 @ul
 - Ola
@@ -82,7 +118,7 @@ Also, note the jQuery and Bootstrap numbers here. That's quite close, don't you 
 - ... and many more!
 @ulend
 
-Note: This one is a frequently asked question, is anyone using Vue? Yes, Vue has started seeing adoption in India as well. Some of the companies using Vue are: Ola, YourStory, Zoomcar, The Souled Store, and many more... Vue is now already being used by your peers. This makes the case for using Vue in your organization a lot easier.
+Note: This one is a frequently asked question, is anyone using Vue in India? Yes, Vue has started seeing adoption in India as well. Some of the companies using Vue are: Ola, YourStory, Zoomcar, The Souled Store, and many more... Vue is now already being used by your peers. This makes the case for using Vue in your organization a lot easier.
 
 ---
 
@@ -95,7 +131,12 @@ Note: This one is a frequently asked question, is anyone using Vue? Yes, Vue has
 - Pune
 @ulend
 
-Note: But does it have an active community? I'm proud to say that Bangalore's Vue community is now 2 years old, with over 900 members. You can find the meetup link at blr.vue.community. Let's see if we can hit the 1000-member mark by the end of today. We host regular monthly meetups covering a variety of topics. This means that if you face any problem in your day-to-day development, you have people you can reach out to for help. Communities in other cities like Hyderabad, Delhi, and Pune are also growing day-by-day. The future looks very bright!
+Note: But does it have an active community? I'm proud to say that Bangalore's Vue community is now 2 years old, with over 900 members. You can find the meetup link at blr.vue.community. Let's see if we can hit the 1000-member mark by the end of today. We host regular monthly meetups covering a variety of topics. This means that if you face any problem in your day-to-day development, you have people you can reach out to for help. Communities in other cities like Hyderabad, Delhi, and Pune are also growing day-by-day. The future looks very bright! Let's move on to the technical side.
+
+---?image=macross.jpg&size=auto 80%
+
+Note: "Macross" is the codename of the latest release of Vue which is version 2.6
+There's an interesting naming convention of the releases; every big release is named after an anime with the next letter of the alphabet. So we've had a ghost in the shell and dragonball as well! You're welcome to place a bet on what the next one might be.
 
 ---
 
@@ -108,11 +149,14 @@ Note: But does it have an active community? I'm proud to say that Bangalore's Vu
 - Built-in data prefetch support during SSR
 @ulend
 
-Note: Coming over to the technical side, the latest release was Vue 2.6, codename "Macross". There's an interesting naming convention of the releases; every big release is named after an anime with the next letter of the alphabet. So we've had a ghost in the shell and dragonball as well! You're welcome to place a bet on what the next one might be.
-One of the most important things that was released in Vue 2.6 is the new slot syntax. We had an RFC for it, and we'll talk more about the details in a bit.
+Note: Let's see what it brings. One of the most important things that was released in Vue 2.6 is the new slot syntax. We had an RFC for it, and we'll talk more about the details in a bit.
 It also comes with an improved asynchronous error handling, so if you use async functions in your lifecycle hooks, the errors during those async processes will actually be captured by Vue's error handlers now. You'll be able to easily handle these errors and send it to your error monitoring services.
 This release also improves compiler error messages so now if you make a syntax error in your template and the complier complains, you actually get a code-frame pointing to exactly where you made the mistake. A point worth highlighting is that this feature was contributed by a community member.
-Finally, we have built-in data prefetch support during server-side rendering. This is pretty important for all the server-side rendering solutions because up until now, if you try to fetch data on the server, it's tied to your routing system. When you visit a route, you have to place your data fetching logic right in the top-level route component or in the route-specific component else it will be skipped. This places an unnecessary restriction on where your data fetching logic can be placed at. In 2.6, Vue gives you the ability to place your logic anywhere down your component tree. And this greatly simplifies the implementations for higher-order solutions for server-side rendering. Overall, it will result in a better development experience for server-side rendering apps.
+Finally, we have built-in data prefetch support during server-side rendering. This is pretty important for all the server-side rendering solutions because up until now, if you try to fetch data on the server, it's tied to your routing system. When you visit a route, you have to place your data fetching logic right in the top-level route component or in the route-specific component else it will be skipped. This places an unnecessary restriction on where your data fetching logic can be placed at. In 2.6, Vue gives you the ability to place your logic anywhere down your component tree. And this greatly simplifies the implementations for higher-order solutions for server-side rendering. Like Nuxt will be able to leverage this to greatly simplify its async data implementation and remove some restrictions. Overall, it will result in a better development experience for server-side rendering apps.
+
+---?image=typescript.jpg&size=auto 80%
+
+Note: Let's talk about TypeScript!
 
 ---
 
@@ -131,14 +175,15 @@ Being TypeScript-friendly doesn't affect non-TS users' experience. If you are no
 ### RFCs?
 
 @ul
+- Framework for proposing substantial changes
 - https://github.com/vuejs/rfcs/
 @ulend
 
-Note: Vue has a RFC, or a Request for Comments, process set in place. By the way, this is a great way to get involved in the Vue community. So you can go visit this link on GitHub, propose a new change, and participate in the ongoing discussions on the open proposals. This makes things open, in the sense that you have visibility of what features are in the pipeline. And it provides an opportunity for someone to point an edge-case in case it was neglected by the core-team. All breaking changes go through RFCs. Let's take a look at some of them:
+Note: Vue has a RFC, or a Request for Comments, process set in place. By the way, this is a great way to get involved in the Vue community. So you can go visit this link on GitHub and propose ideas on how to improve Vue. You can also participate in the ongoing discussions on the open proposals. This makes things open, in the sense that you have visibility of what features are in the pipeline. And it provides an opportunity for someone to point an edge-case in case it was neglected by the core-team. All breaking changes go through RFCs. Let's take a look at some of them:
 
 ---
 
-### RFC: Slot-based syntax
+### RFC: New Slot Syntax
 
 ```html
 <!-- default slot -->
@@ -156,13 +201,23 @@ Note: Vue has a RFC, or a Request for Comments, process set in place. By the way
 </foo>
 ```
 
+---?image=darkest.jpg&size=auto 80%
+
+Note: Let's move on to a bit of a controversial RFC, which was making headlines recently. Some even called it Vue's Darkest Day.
+
 ---
 
 ### RFC: Function-based Component API
 
+Note:
+
 ---
 
 ### RFC: Composition API
+
+---?image=mobile.jpg&size=auto 80%
+
+Note: Everyone needs a mobile app nowadays!
 
 ---
 
@@ -175,6 +230,10 @@ Note: Vue has a RFC, or a Request for Comments, process set in place. By the way
 
 Note: For building mobile apps, we already have solutions like NativeScript Vue and Weex. We also have mature Cordova-based solutions like Quasar, Ionic 4, and Onsen UI. Quasar released a 1.0 version earlier this year; it's really impressive.
 
+---?image=ssr.jpg&size=auto 80%
+
+Note: Server-side rendering has been on the rise in recent years and aptly so because of the benefits it provides.
+
 ---
 
 ### State of SSR
@@ -184,7 +243,11 @@ Note: For building mobile apps, we already have solutions like NativeScript Vue 
 - prerender-spa-plugin
 @ulend
 
-Note: Server-side rendering has been on the rise in recent years and aptly so because of the benefits it provides: Better SEO, as search-engine crawlers directly see the fully rendered page and faster time-to-content, especially on slow internet or slow devices. The Vue ecosystem is sorted on SSR, Nuxt and the prerender-spa-plugin are the most popular choices for achieving this.
+Note: Better SEO, as search-engine crawlers directly see the fully rendered page and faster time-to-content, especially on slow internet or slow devices. The Vue ecosystem is sorted on SSR, Nuxt and the prerender-spa-plugin are the most popular choices for achieving this.
+
+---?image=rent.png&size=auto 80%
+
+Note: Coming to sustainability, as GitHub stars don't pay the bills.
 
 ---
 
@@ -213,9 +276,13 @@ Evan has a Patreon to fund his full-time work on Vue. There is also an OpenColle
 
 Note: To summarize, Vue is getting more popular day-by-day and has started gaining adoption. People around you are already using Vue or learning Vue. The latest release of 2.6 has brought some performance improvements as well. It's flexible, in the sense that it doesn't force you to use any particular template-syntax or TypeScript. Heck, you can even use Pug and Stylus if you don't like closing HTML tags. The mobile ecosystem is quite mature now and ready to take on your requirements. And it's sustainable, so it's here to stay for a long time.
 
+---?image=vue3.jpg&size=auto 80%
+
+Note: Aaand Vue 3 is coming! Today's closing talk will go into more details about it so stay tuned!
+
 ---
 
-### Have a Vuetiful Day!
+### Have a @color[#42b883](Vue)tiful Day!
 
 <br>
 ![](avatar.png)
