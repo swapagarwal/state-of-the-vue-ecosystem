@@ -18,7 +18,7 @@ Hello everyone! Woah, that's a lot of people.
 
 ---?image=excited.jpg&size=auto 80%
 
-Note: I'm super excited to be here, as we've got a houseful of Vue lovers here today from different parts of the country. If someone had told me that we'll be having a Vue conference a year back, I'd not have believed it. Yet, here we are! Let's take a look at the current state of the Vue ecosystem and some of its recent developments, in the community as well as technical aspects. Sit back, relax, and enjoy the View!
+Note: I'm super excited to be at India's first large-scale Vue conference. We've been pushing to make this happen for quite some time now, be it getting the word out, getting talk proposals, and finally getting you, a houseful of Vue lovers from different parts of the country. So here we are! Let's take a look at the current state of the Vue ecosystem, its community, and some of the recent technical developments. Sit back, relax, and enjoy the View!
 
 ---
 
@@ -47,11 +47,11 @@ If you're building user interfaces, Vue is a great choice. But don't take our wo
 
 @ul
 - Most Starred JS Framework on GitHub (mid 2018)
-- 2nd Most Starrted Project on GitHub (early 2019)
+- 2nd Most Starred Project on GitHub (early 2019)
 @ulend
 
 Note: So, what's the buzz around Vue.js, anyway?
-In mid 2018, Vue became the most starred javascript framework on GitHub. Earlier this year, Vue became the second most starred project on GitHub (only behind freeCodeCamp)!
+In mid 2018, Vue became the most starred javascript framework on GitHub. Earlier this year, Vue became the second most starred project on GitHub, across all languages (only behind freeCodeCamp)!
 
 ---?image=github.png&size=auto 80%
 
@@ -76,12 +76,12 @@ Not only that, it has more than 900,000 weekly active devtools users. Devtools i
 jsDelivr CDN
 @snapend
 
-Note: These are the number of hits on the jsDelivr CDN. Vue got over 900 million hits in the last month. That's more than 30 million hits a day. And that's pretty huge! This number is quite high as compared to NPM downloads because Vue provides a drop-in solution. You could just add the CDN file in a script tag and you're ready to use the power of Vue!
-Also, note the jQuery and Bootstrap numbers here. That's quite close, don't you think?
+Note: These are the number of hits on the jsDelivr CDN. If you see the 10th place, Vue got over 900 million hits in the last month. That's more than 30 million hits a day. And that's pretty huge! This number is quite high as compared to NPM downloads because Vue provides a drop-in solution. You could just add the CDN file in a script tag and you're ready to use the power of Vue!
+Also, note the jQuery and Bootstrap numbers here, at the 7th and 8th places. That's quite close, don't you think?
 
 ---?image=numbers.jpg&size=auto 80%
 
-Note: I think we have had enough of numbers!
+Note: Enough of numbers now!
 Let's move onto something real.
 
 ---
@@ -118,7 +118,7 @@ Note: Who uses Vue? For starters, Laravel! It's the one who kickstarted Vue's ad
 - ... and many more!
 @ulend
 
-Note: This one is a frequently asked question, is anyone using Vue in India? Yes, Vue has started seeing adoption in India as well. Some of the companies using Vue are: Ola, YourStory, Zoomcar, The Souled Store, and many more... Vue is now already being used by your peers. This makes the case for using Vue in your organization a lot easier.
+Note: Now this one is a frequently asked question, is anyone using Vue in India? Yes, Vue has started seeing adoption in India as well. Some of the companies using Vue are: Ola, YourStory, Zoomcar, The Souled Store, and many more... The point I'm trying to make here is that, Vue is now already being used by your peers. This makes the case for using Vue in your organization a lot easier.
 
 ---
 
@@ -131,7 +131,7 @@ Note: This one is a frequently asked question, is anyone using Vue in India? Yes
 - Pune
 @ulend
 
-Note: But does it have an active community? I'm proud to say that Bangalore's Vue community is now 2 years old, with over 900 members. You can find the meetup link at blr.vue.community. Let's see if we can hit the 1000-member mark by the end of today. We host regular monthly meetups covering a variety of topics. This means that if you face any problem in your day-to-day development, you have people you can reach out to for help. Communities in other cities like Hyderabad, Delhi, and Pune are also growing day-by-day. The future looks very bright! Let's move on to the technical side.
+Note: But does it have an active community? I'm proud to say that Bangalore's Vue community is now 2 years old, with over 900 members. You can find the meetup link at blr.vue.community. Let's see if we can hit the 1000-member mark by the end of today. We host regular monthly meetups covering a variety of topics. This means that if you face any problem in your day-to-day development, you have people you can reach out to for help. Other cities like Hyderabad, Delhi, and Pune are following suit and have growing communities. The future looks bright! Let's move on to the technical side.
 
 ---?image=macross.jpg&size=auto 80%
 
@@ -154,22 +154,6 @@ It also comes with an improved asynchronous error handling, so if you use async 
 This release also improves compiler error messages so now if you make a syntax error in your template and the complier complains, you actually get a code-frame pointing to exactly where you made the mistake. A point worth highlighting is that this feature was contributed by a community member.
 Finally, we have built-in data prefetch support during server-side rendering. This is pretty important for all the server-side rendering solutions because up until now, if you try to fetch data on the server, it's tied to your routing system. When you visit a route, you have to place your data fetching logic right in the top-level route component or in the route-specific component else it will be skipped. This places an unnecessary restriction on where your data fetching logic can be placed at. In 2.6, Vue gives you the ability to place your logic anywhere down your component tree. And this greatly simplifies the implementations for higher-order solutions for server-side rendering. Like Nuxt will be able to leverage this to greatly simplify its async data implementation and remove some restrictions. Overall, it will result in a better development experience for server-side rendering apps.
 
----?image=typescript.jpg&size=auto 80%
-
-Note: Let's talk about TypeScript!
-
----
-
-### TypeScript
-
-@ul
-- Vue's internal implementation moving to TS
-- Doesn’t affect non-TS experience
-@ulend
-
-Note: TypeScript has really gained some momentum recently and you might have heard that Vue is moving to TypeScript. To clear things here, only the internal implementation is being moved to TypeScript and everything else remains the same.
-Being TypeScript-friendly doesn't affect non-TS users' experience. If you are not using TypeScript yet or don't plan to use it, we respect that and you can continue to use Vue as you do today. There's absolutely no need to worry about anything! The API is gonna work the same with or without TypeScript.
-
 ---
 
 ### RFCs?
@@ -185,35 +169,189 @@ Note: Vue has a RFC, or a Request for Comments, process set in place. By the way
 
 ### RFC: New Slot Syntax
 
+@ul
+- More clear syntax for default scoped slots
+- More consistent and explicit when using named slots
+@ulend
+
+Note: Let's see how the unification looks like using some examples.
+
+---
+
+### Default slot with text
+
 ```html
-<!-- default slot -->
-<foo v-slot="{ msg }">
+<foo><!-- old -->
+  <template slot-scope="{ msg }">
+    {{ msg }}
+  </template>
+</foo>
+
+<foo v-slot="{ msg }"><!-- new -->
   {{ msg }}
 </foo>
 ```
 
+---
+
+### Default slot with element
+
 ```html
-<!-- named slot -->
-<foo>
-  <template v-slot:one="{ msg }">
+<foo><!-- old -->
+  <div slot-scope="{ msg }">
     {{ msg }}
+  </div>
+</foo>
+
+<foo v-slot="{ msg }"><!-- new -->
+  <div>
+    {{ msg }}
+  </div>
+</foo>
+```
+
+---
+
+### Named slots
+
+```html
+<foo><!-- old -->
+  <div slot="one" slot-scope="{ msg }">
+    element slot: {{ msg }}
+  </div>
+</foo>
+
+<foo><!-- new -->
+  <template v-slot:one="{ msg }">
+    <div>
+      element slot: {{ msg }}
+    </div>
   </template>
 </foo>
 ```
 
 ---?image=darkest.jpg&size=auto 80%
 
-Note: Let's move on to a bit of a controversial RFC, which was making headlines recently. Some even called it Vue's Darkest Day.
+Note: Let's move on to a bit of a controversial RFC, which was making headlines recently. Some even called it Vue's Darkest Day. Let's see what happened.
+
+---
+
+```html
+<template>
+  <div>
+    Count is {{ count }}, count * 2 is {{ double }}
+    <button @click="increment">+</button>
+  </div>
+</template>
+```
+
+---
+
+```html
+<script>
+export default {
+  data() {
+    return { count: 0 }
+  },
+  methods: {
+    increment() { this.count++ }
+  },
+  computed: {
+    double() { return this.count * 2 }
+  }
+}
+</script>
+```
+
+---
+
+```html
+<script>
+import { value, computed } from 'vue'
+
+export default {
+  setup() {
+    const count = value(0)
+    const double = computed(() => count.value * 2)
+    const increment = () => { count.value++ }
+    return {
+      count,
+      double,
+      increment
+    }
+  }
+}
+</script>
+```
+
+Note: So, the initial reaction (including mine) was that this is quite complicated compared to the current syntax, defeating the whole point of Vue being simplistic. All the time people had spent learning Vue had been wasted given everything was about to change.
 
 ---
 
 ### RFC: Function-based Component API
 
-Note:
+@ul
+- Purely additive to 2.x and doesn't break anything
+- No rewrite required if you don't want to
+- No plan of deprecating the Object API; it stays for the foreseeable future
+@ulend
+
+Note: The best thing about RFCs is that they are not set in stone. It's an invitation to a discussion. And there was a long discussion on this. And modifications were made.
 
 ---
 
-### RFC: Composition API
+### Revised RFC: Composition API
+
+@ul
+- Logic Reuse
+- Better Type Inference
+@ulend
+
+Note: A new revised RFC was opened this month. It makes things simpler while retaining the benefits of Logic Reuse and Better Type Inference.
+
+---
+
+```html
+<script>
+import { value, computed } from 'vue'
+
+export default {
+  setup() {
+    const count = value(0)
+    const double = computed(() => count.value * 2)
+
+    const increment = () => { count.value++ }
+
+    return { count, double, increment }
+  }
+}
+</script>
+```
+
+Note: This is the RFC that was closed.
+
+---
+
+```html
+<script>
+import { reactive, computed } from 'vue'
+
+export default {
+  setup() {
+    const state = reactive({
+      count: 0,
+      double: computed(() => state.count * 2)
+    })
+
+    function increment() { state.count++ }
+
+    return { state, increment }
+  }
+}
+</script>
+```
+
+Note: Here's a new RFC that was opened this month. To emphasize, this is in open state and you can join the discussion on GitHub.
 
 ---?image=mobile.jpg&size=auto 80%
 
@@ -274,11 +412,11 @@ Evan has a Patreon to fund his full-time work on Vue. There is also an OpenColle
 - Here to Stay!
 @ulend
 
-Note: To summarize, Vue is getting more popular day-by-day and has started gaining adoption. People around you are already using Vue or learning Vue. The latest release of 2.6 has brought some performance improvements as well. It's flexible, in the sense that it doesn't force you to use any particular template-syntax or TypeScript. Heck, you can even use Pug and Stylus if you don't like closing HTML tags. The mobile ecosystem is quite mature now and ready to take on your requirements. And it's sustainable, so it's here to stay for a long time.
+Note: To summarize, Vue is getting more popular day-by-day and has started gaining adoption. People around you are already using Vue or learning Vue. The latest release of 2.6 has brought some performance improvements as well. It's flexible, in the sense that it doesn't force you to use any particular template-syntax or TypeScript. Heck, you can even use Pug and Stylus if you don't like closing HTML tags. The mobile ecosystem is quite mature now and ready to take on your requirements. Plus it's sustainable, so it's here to stay for a long time.
 
 ---?image=vue3.jpg&size=auto 80%
 
-Note: Aaand Vue 3 is coming! Today's closing talk will go into more details about it so stay tuned!
+Note: Aaand Vue 3 is coming! Despite what you may have heard, it doesn't force you to use TypeScript. It's your choice, as developer experience has always been of utmost importance to Vue's principles. Today's closing talk will go into more details about it so stay tuned!
 
 ---
 
@@ -290,5 +428,5 @@ Note: Aaand Vue 3 is coming! Today's closing talk will go into more details abou
 @SwapAgarwal
 (<a href="https://swapnil.net/" target="_blank" rel="noopener noreferrer">swapnil.net</a>)
 
-Note: That's all from my side. My name is Swapnil and you can find me at swapnil.net
+Note: And that's all from my side. My name is Swapnil and you can find me at swapnil.net
 Thanks everyone for being here and I hope you Have a Vuetiful Day!
